@@ -1,5 +1,5 @@
 module "ec2" {
-  source = "../..//modules//ec2"
+  source = "../../../modules/ec2"
 
   count = var.ec2_test.instance_count
 
@@ -8,5 +8,5 @@ module "ec2" {
   key_name      = var.ec2_test.key_name
   subnet_id     = var.ec2_test.subnet_id
   vpc_security_group_ids = var.ec2_test.vpc_security_group_ids
-  user_data     = var.ec2_test.user_data
+  private_ip = var.ec2_test.private_ip
 }                                                                           
