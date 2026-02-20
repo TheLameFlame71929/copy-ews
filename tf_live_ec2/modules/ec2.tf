@@ -1,5 +1,5 @@
 module "ec2" {
-  source = "C:\\Users\\AliKh\\CodingProjects\\My-Rojects\\copy-ews\\modules\\ec2"
+  source = "../..//modules//ec2"
 
   count = var.ec2_test.instance_count
 
