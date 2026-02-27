@@ -9,4 +9,4 @@ module "ec2" {
   subnet_id     = var.ec2_test.subnet_id
   vpc_security_group_ids = var.ec2_test.vpc_security_group_ids
   private_ip = var.ec2_test.private_ip
-}                                                                           
+}
