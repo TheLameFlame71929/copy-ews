@@ -3,7 +3,7 @@ include {
 }
 
 terraform {
-    source = "../../../modules"
+  source = "${get_repo_root()}//tf_live_ec2/modules"
 }
 
 inputs = {
