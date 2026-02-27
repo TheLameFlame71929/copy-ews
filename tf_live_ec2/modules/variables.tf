@@ -8,6 +8,7 @@ variable "ec2_test" {
     subnet_id          = string
     vpc_security_group_ids = list(string)
     user_data          = string
+    private_ip         = optional(string, null)
   })
   
 }
