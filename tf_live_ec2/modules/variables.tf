@@ -5,8 +5,8 @@ variable "ec2_test" {
     instance_type      = string
     ami                = string
     key_name           = string
-    subnet_id          = string
-    vpc_security_group_ids = list(string)
+    subnet_id          = optional(string, null)
+    vpc_security_group_ids = optional(list(string), null)
     user_data          = string
     private_ip         = optional(string, null)
   })
